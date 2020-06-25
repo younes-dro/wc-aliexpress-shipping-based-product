@@ -247,10 +247,10 @@ class WC_Ali_Products_Shipment{
             return;
                  
         }
-//        Load the front end template
-//        add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
-        if( ! is_admin()  ){   
-            $this->frontend_includes();
+        
+        if( ! is_admin()  ){  
+            add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
+            
         }     
         new WC_Ali_Menu();
     }
@@ -259,8 +259,8 @@ class WC_Ali_Products_Shipment{
     * Include template functions and hooks.
     */
     public function frontend_includes(){
-//            require_once ('includes/wc-cvp-template-functions.php');
-//            require_once ('includes/wc-cvp-template-hooks.php');
+        
+        new WC_Ali_Template();
     }
     /*-----------------------------------------------------------------------------------*/
     /*  Helper Functions                                                                 */
