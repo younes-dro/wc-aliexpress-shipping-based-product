@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * Manages the dependencies that the Plugin needs to operate.
  * 
  * @author    Younes DRO
  * @copyright Copyright (c) 2020, Younes DRO
@@ -188,5 +189,19 @@ class WC_Ali_Dependencies {
     public function is_compatible( ) {
      
         return ( self::check_php_version() && self::check_wp_version() && self::check_wc_version() && self::check_ali2woo() );
+    }
+    
+    /**
+     * Check if an Ali2woo class is loaded.
+     * 
+     * @param string $class_name
+     */
+    public static function check_ali2woo_class( $class_name ) {
+        
+        if ( class_exists( $class_name ) ){
+            return true;
+        }
+        
+        return false;
     }
 }
