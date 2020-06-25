@@ -260,7 +260,7 @@ class WC_Ali_Products_Shipment{
     */
     public function frontend_includes(){
         
-        new WC_Ali_Template();
+        new WC_Ali_Front();
     }
     /*-----------------------------------------------------------------------------------*/
     /*  Helper Functions                                                                 */

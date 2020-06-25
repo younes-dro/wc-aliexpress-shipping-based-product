@@ -3,9 +3,9 @@
 /**
  * 
  */
-if ( ! class_exists( 'WC_Ali_Template' ) ) {
+if ( ! class_exists( 'WC_Ali_Front' ) ) {
 
-    class WC_Ali_Template  {
+    class WC_Ali_Front  {
 
         public function __construct() {
 
