@@ -241,7 +241,7 @@ class WC_Ali_Products_Shipment{
     * @since 0.1.0
     */
     public function init_plugin() {
-            
+        
         if ( ! self::$dependencies->is_compatible() ){
             
             return;
@@ -249,11 +249,10 @@ class WC_Ali_Products_Shipment{
         }
 //        Load the front end template
 //        add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
-            
         if( ! is_admin()  ){   
-            require_once 'includes/class-wc-ali-frontend.php';
             $this->frontend_includes();
-        }            
+        }     
+        new WC_Ali_Menu();
     }
         
     /**
@@ -305,7 +304,29 @@ class WC_Ali_Products_Shipment{
         return plugin_basename( __FILE__ );
         
     }
+    
+    /**
+     * Register the built-in autoloader
+     * 
+     * @codeCoverageIgnore
+     */
+    public static function register_autoloader ( ){
+        spl_autoload_register( array ( 'WC_Ali_Products_Shipment' , 'autoloader' ) );
+    }
+    
+    /**
+     * Register autoloader.
+     * 
+     * @param string $class Class name to load
+     */
+    public static function autoloader ( $class_name ){
         
+        $class = strtolower ( str_replace( '_', '-' , $class_name ) );
+        $file  = plugin_dir_path ( __FILE__ ) . '/includes/class-' . $class . '.php'; 
+        if ( file_exists( $file ) ){
+            require_once $file;
+        }
+    }
 }
 
 /**
@@ -313,8 +334,9 @@ class WC_Ali_Products_Shipment{
  */
 function WC_Ali_Products_Shipment(){
     
+    WC_Ali_Products_Shipment::register_autoloader();
     return WC_Ali_Products_Shipment::start( new WC_Ali_Dependencies() );
     
 }
-require_once plugin_dir_path( __FILE__) . '/includes/class-wc-ali-dependencies.php';
+
 WC_Ali_Products_Shipment();
