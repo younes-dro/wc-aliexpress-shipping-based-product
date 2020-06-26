@@ -83,6 +83,8 @@ class WC_Ali_Products_Shipment{
         add_action( 'admin_notices', array( $this, 'admin_notices' )  , 15 );
         
         add_action( 'plugins_loaded', array ( $this , 'init_plugin') );
+        
+        add_action( 'init' , array( $this , 'load_textdomain' ) );
                
           
     }    
@@ -326,6 +328,10 @@ class WC_Ali_Products_Shipment{
         if ( file_exists( $file ) ){
             require_once $file;
         }
+    }
+    
+    public function load_textdomain(){
+        load_plugin_textdomain( 'wc-ali-products-based-shipment', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
     }
 }
 
