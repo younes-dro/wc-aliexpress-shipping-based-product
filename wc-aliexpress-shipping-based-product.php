@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Enable / Disable products based on shipping method available for destination .
+ * Plugin Name:     Aliexpress Display location-based products.
  * Plugin URI:      https://dro.123.fr/woocommerce-aliexpress-products-based-shipment
  * Description:     Show / Hide products based on shipping methods available for the shipping country.
  * Author:          Younes DRO
