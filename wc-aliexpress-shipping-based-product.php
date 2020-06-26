@@ -254,14 +254,14 @@ class WC_Ali_Products_Shipment{
             add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
             
         }     
-        new WC_Ali_Menu();
+        new WC_Ali_Menu( new WC_Ali_Settings() );
     }
         
     /**
     * Include template functions and hooks.
     */
     public function frontend_includes(){
-        
+
         new WC_Ali_Front();
     }
     /*-----------------------------------------------------------------------------------*/
