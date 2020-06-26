@@ -17,8 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 
  * @class WC_Ali_Dependencies
  * @author Younes DRO <younesdro@gmail.com>
- * @version 0.1.0
- * @since 0.1.0
+ * @version 1.0.0
+ * @since 1.0.0
  */
 class WC_Ali_Dependencies {
 
@@ -41,7 +41,7 @@ class WC_Ali_Dependencies {
     /**
      * Checks the PHP version.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return bool Return true if the PHP version is compatible.Otherwise, will return false.
      */
@@ -53,7 +53,7 @@ class WC_Ali_Dependencies {
     /**
      * Gets the message for display when PHP version is incompatible with this plugin.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return string Return an informative message.
      */
@@ -67,7 +67,7 @@ class WC_Ali_Dependencies {
     /**
      * Checks the WordPress version.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return bool Return true if the WordPress version is compatible.Otherwise, will return false.
      */
@@ -98,7 +98,7 @@ class WC_Ali_Dependencies {
     /**
      * Checks WooCommerce is installed, activated and compatible.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return bool Return true if the WooCommerce is installed , activated and the version is compatible.Otherwise, will return false.
      */
@@ -130,7 +130,7 @@ class WC_Ali_Dependencies {
     /**
      * Checks Ali2woo is installed, activated and compatible.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return bool Return true if the Ali2woo is installed , activated and the version is compatible.Otherwise, will return false.
      */    
@@ -182,7 +182,7 @@ class WC_Ali_Dependencies {
     /**
      * Determines if all the requirements are valid .
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * 
      * @return bool
      */

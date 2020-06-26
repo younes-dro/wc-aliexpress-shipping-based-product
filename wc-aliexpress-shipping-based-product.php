@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     Aliexpress Display location-based products.
+ * Plugin Name:     Sell Products Based Shipment for Ali2woo.
  * Plugin URI:      https://dro.123.fr/woocommerce-aliexpress-products-based-shipment
  * Description:     Show / Hide products based on shipping methods available for the shipping country.
  * Author:          Younes DRO
  * Author URI:      https://dro.123.fr/
  * Text Domain:     wc-ali-products-based-shipment
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  * 
  * WC requires at least: 3.7.0
  * WC tested up to: 4.2.0
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 
  * The main instance of the plugin.
  * 
- * @since 0.1.0
+ * @since 1.0.0
  */
 class WC_Ali_Products_Shipment{
     
@@ -44,7 +44,7 @@ class WC_Ali_Products_Shipment{
      * 
      * @var String 
      */
-    public $version = '0.1.0';
+    public $version = '1.0.0';
     
     /**
     * Plugin Name
@@ -94,7 +94,7 @@ class WC_Ali_Products_Shipment{
      * 
      * Ensures only one instance of WC_Ali_Products_Shipment is loaded or can be loaded.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      * @param Obj $dependencies Check the dependencies that the plugin needs
      * 
      * @return WC_Ali_Products_Shipment instance
@@ -110,7 +110,7 @@ class WC_Ali_Products_Shipment{
     /**
      * Cloning is forbidden due to singleton pattern.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public function __clone() {
         $cloning_message = sprintf( 
@@ -123,7 +123,7 @@ class WC_Ali_Products_Shipment{
     /**
      * Unserializing instances is forbidden due to singleton pattern.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public function __wakeup() {
         $unserializing_message = sprintf( 
@@ -136,7 +136,7 @@ class WC_Ali_Products_Shipment{
     /**
      * Checks the server environment and deactivates plugins as necessary.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public  function activation_check() {
 
@@ -152,7 +152,7 @@ class WC_Ali_Products_Shipment{
     /**
      * Checks the environment on loading WordPress, just in case the environment changes after activation.
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      */
     public function check_environment(){
         
@@ -170,7 +170,7 @@ class WC_Ali_Products_Shipment{
     /**
      * Deactivate the plugin
      * 
-     * @since 0.1.0
+     * @since 1.0.0
      */
     protected function deactivate_plugin(){
         
@@ -184,7 +184,7 @@ class WC_Ali_Products_Shipment{
     /** 
     * Adds an admin notice to be displayed.
     *
-    * @since 0.1.0
+    * @since 1.0.0
     *
     * @param string $slug message slug
     * @param string $class CSS classes
@@ -220,7 +220,7 @@ class WC_Ali_Products_Shipment{
     /** 
     * Displays any admin notices added with \WC_Ali_Products_Shipment::add_admin_notice()
     *
-    * @since 0.1.0
+    * @since 1.0.0
     */
     public function admin_notices() {
         
@@ -240,7 +240,7 @@ class WC_Ali_Products_Shipment{
     /**
     * Initializes the plugin.
     * 
-    * @since 0.1.0
+    * @since 1.0.0
     */
     public function init_plugin() {
         
@@ -271,7 +271,7 @@ class WC_Ali_Products_Shipment{
     /**
     * Get the plugin url.
     * 
-    * @since 0.1.0
+    * @since 1.0.0
     * 
     * @return string
     */
@@ -284,7 +284,7 @@ class WC_Ali_Products_Shipment{
     /**
     * Get the plugin path.
     * 
-    * @since 0.1.0
+    * @since 1.0.0
     * 
     * @return string
     */
@@ -297,7 +297,7 @@ class WC_Ali_Products_Shipment{
     /**
     * Get the plugin base path name.
     * 
-    * @since 0.1.0
+    * @since 1.0.0
     * 
     * @return string
     */
