@@ -253,8 +253,9 @@ class WC_Ali_Products_Shipment{
         if( ! is_admin()  ){  
             add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
             
-        }     
-        new WC_Ali_Menu( new WC_Ali_Settings() );
+        }
+        
+        new WC_Ali_Menu( );
     }
         
     /**
