@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Add submenu to ali2woo.
+ * Settings for the plugin
  * 
  * @author    Younes DRO
  * @copyright Copyright (c) 2020, Younes DRO
@@ -11,17 +11,17 @@ if ( ! defined ( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
-if ( ! class_exists ( 'WC_Ali_Menu' ) ) {
+if ( ! class_exists ( 'WC_Ali_Settings' ) ) {
 
     /**
-     * Display the Settings.
+     * Save the Settings.
      * 
-     * @class WC_Ali_Menu
+     * @class WC_Ali_Settings
      * @author Younes DRO <younesdro@gmail.com>
      * @version 1.0.0
      * @since 1.0.0
      */
-    class WC_Ali_Menu {
+    class WC_Ali_Settings {
 
         /**
          * Instance of WC_AliSettings class.

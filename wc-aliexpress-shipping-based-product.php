@@ -255,7 +255,7 @@ class WC_Ali_Products_Shipment{
             
         }
         
-        new WC_Ali_Menu( );
+        new WC_Ali_Settings( );
     }
         
     /**
