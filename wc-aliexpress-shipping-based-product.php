@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Sell Products Based Shipment for Ali2woo.
+ * Plugin Name:     Shipment-based product for Ali2woo.
  * Plugin URI:      https://dro.123.fr/woocommerce-aliexpress-products-based-shipment
  * Description:     Show / Hide products based on shipping methods available for the shipping country.
  * Author:          Younes DRO
@@ -251,7 +251,7 @@ class WC_Ali_Products_Shipment{
         }
         
         if( ! is_admin()  ){  
-            add_action( 'after_setup_theme', array( $this , 'frontend_includes') );
+            add_action( 'wp', array( $this , 'frontend_includes' ) );
             
         }
         
@@ -262,7 +262,7 @@ class WC_Ali_Products_Shipment{
     * Include template functions and hooks.
     */
     public function frontend_includes(){
-
+        
         new WC_Ali_Front();
     }
     /*-----------------------------------------------------------------------------------*/
