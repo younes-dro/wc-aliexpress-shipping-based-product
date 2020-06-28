@@ -1,0 +1,15 @@
+/* 
+    Created on : 28 juin 2020, 00:59:17
+    Author     : younes dro
+*/
+
+
+P.dro-simple-product-message{
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px 5px;
+    color: #000;
+    background-color: #f9f8f8;
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
