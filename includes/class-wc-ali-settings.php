@@ -28,6 +28,13 @@ if ( !class_exists( 'WC_Ali_Settings' ) ) {
          * @var obj 
          */
         public $option;
+        
+        /**
+         * The default message to display.
+         * 
+         * @var string 
+         */
+        private $default_message = 'This item cannot be delivered to the selected address. Please choose a different address.';
 
         /**
          * 
@@ -69,43 +76,53 @@ if ( !class_exists( 'WC_Ali_Settings' ) ) {
         }
 
         public function simple_products() {
-            $val = $this->option['simple_products'];
+            
+            $val  = ( $this->option_has_value( $this->option['simple_products'] ) ) ? $this->option['simple_products'] : $this->default_message;
+            
             woocommerce_form_field( 'dro_shipping_options[simple_products]', array(
                 'type' => 'text',
                 'id' => 'simple_products',
                 'class' => array( 'dro-simple-product-message' ),
+                'placeholder' => esc_html__( $this->default_message ),
                 'description' => esc_html__( 'Custom message shown on single product page of simple product type', 'wc-ali-products-based-shipment' )
-                    ), $val);
+                    ), esc_html__( $val ) );
         }
 
         public function variable_products() {
-            $val = $this->option['variable_products'];
+            
+            $val  = ( $this->option_has_value( $this->option['variable_products'] ) ) ? $this->option['variable_products'] : $this->default_message;
+            
             woocommerce_form_field( 'dro_shipping_options[variable_products]', array(
                 'type' => 'text',
                 'id' => 'variable_products',
                 'desc_tip' => true,
+                'placeholder' => esc_html__( $this->default_message ),
                 'description' => esc_html__( 'Custom message shown on single product page of variable product type', 'wc-ali-products-based-shipment' )
-                    ), $val);
+                    ), esc_html__( $val ) );
         }
 
         public function grouped_products() {
-            $val = $this->option['grouped_products'];
+            
+            $val  = ( $this->option_has_value( $this->option['grouped_products'] ) ) ? $this->option['grouped_products'] : $this->default_message;            
+            
             woocommerce_form_field( 'dro_shipping_options[grouped_products]', array(
                 'type' => 'text',
                 'id' => 'grouped_products',
                 'desc_tip' => true,
-                'placeholder' => esc_html__( 'Sorry this grouped product can\'t be shipped to the selected region' ),
+                'placeholder' => esc_html__( $this->default_message ),
                 'description' => esc_html__( 'Custom message shown on single product page of grouped product type', 'wc-ali-products-based-shipment' )
                     ), $val);
         }
 
         public function external_products() {
-            $val = $this->option['external_products'];
+            
+            $val  = ( $this->option_has_value( $this->option['external_products'] ) ) ? $this->option['external_products'] : $this->default_message;
+            
             woocommerce_form_field( 'dro_shipping_options[external_products]', array(
                 'type' => 'text',
                 'id' => 'external_products',
                 'desc_tip' => true,
-                'placeholder' => esc_html__( 'Sorry this external product can\'t be shipped to the selected region' ),
+                'placeholder' => esc_html__( $this->default_message ),
                 'description' => esc_html__( 'Custom message shown on single product page of external product type', 'wc-ali-products-based-shipment' )
                     ), $val);
         }
@@ -130,7 +147,20 @@ if ( !class_exists( 'WC_Ali_Settings' ) ) {
             </div>
             <?php
         }
-
+        
+        public function option_has_value( $option ){
+            
+            $option = trim( $option );
+            
+            if ( isset ( $option ) && ! empty ( $option ) ){
+                
+                return $option;
+                
+            }else{
+                
+                return false;
+            }
+        }
     }
 
 }
