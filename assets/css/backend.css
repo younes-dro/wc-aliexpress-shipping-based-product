@@ -1,0 +1,11 @@
+/* 
+    Created on : 28 juin 2020, 00:59:17
+    Author     : younes dro
+*/
+
+
+form#dro-ali-form input[type="text"] {
+    max-width: 60%;
+    width: 60%;
+    display: block;
+}
