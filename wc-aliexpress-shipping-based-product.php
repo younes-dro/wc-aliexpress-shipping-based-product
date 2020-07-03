@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     Shipment-Based Product for Ali2Woo
- * Plugin URI:      https://dro.123.fr/woocommerce-aliexpress-products-based-shipment
+ * Plugin URI:      https://github.com/younes-dro/wc-aliexpress-shipping-based-product
  * Description:     Show / Hide products based on shipping methods available for the shipping country.
  * Author:          Younes DRO
  * Author URI:      https://github.com/younes-dro/
