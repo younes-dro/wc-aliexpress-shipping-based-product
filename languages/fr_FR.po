@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Shipping-Based Products for Ali2Woo\n"
+"POT-Creation-Date: 2020-07-27 02:16+0100\n"
+"PO-Revision-Date: 2020-07-27 03:02+0100\n"
+"Last-Translator: \n"
+"Language-Team: Younes DRO<younesdro@gmail.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: esc_html__\n"
+"X-Poedit-SearchPath-0: uninstall.php\n"
+"X-Poedit-SearchPath-1: wc-aliexpress-shipping-based-product.php\n"
+"X-Poedit-SearchPath-2: templates\n"
+"X-Poedit-SearchPath-3: includes\n"
+
+#: includes/class-wc-ali-dependencies.php:63
+#, php-format
+msgid ""
+"The minimum PHP version required for this plugin is %1$s. You are running "
+"%2$s."
+msgstr ""
+"La version PHP minimale requise pour ce plugin est %1$s. Vous avez %2$s."
+
+#: includes/class-wc-ali-dependencies.php:91
+#, php-format
+msgid ""
+"%s is not active, as it requires WordPress version %s or higher. Please "
+"%supdate WordPress &raquo;%s"
+msgstr ""
+"%s n'est pas actif, car il nécessite la version WordPress %s ou "
+"supérieure. Veuillez %smettre à jour WordPress &raquo;%s"
+
+#: includes/class-wc-ali-dependencies.php:122
+#, php-format
+msgid ""
+"%1$s, as it requires %2$sWooCommerce%3$s version %4$s or higher. Please "
+"%5$supdate%6$s or activate WooCommerce "
+msgstr ""
+"%1$s, car il nécessite %2$sWooCommerce%3$s de version%4$s ou supérieure. "
+"Veuillez %5$smettre à jour%6$s ou activer WooCommerce "
+
+#: includes/class-wc-ali-dependencies.php:173
+#, php-format
+msgid ""
+"%1$s,The %2$sAliexpress Dropship for Woocommerce%3$s must be active and at "
+"least version %4$s or higher. Please %5$supdate%6$s or activate Aliexpress "
+"Dropship for Woocommerce"
+msgstr ""
+"%1$s, Le Plugin %2$sAliexpress Dropship for Woocommerce%3$s doit être "
+"activé et sa version supérieure à %4$s ou plus. S'il te plait %5$smettre à "
+"jour%6$s ou activter Aliexpress Dropship for Woocommerce"
+
+#: includes/class-wc-ali-settings.php:74
+msgid "Shipment-based products for Ali2Woo"
+msgstr "Shipment-based products for Ali2Woo"
+
+#: includes/class-wc-ali-settings.php:74
+msgid "Shipment-based products"
+msgstr "Shipment-based products"
+
+#: includes/class-wc-ali-settings.php:82
+msgid "Single product pages (per product type)"
+msgstr "Pages de produit (par type de produit)"
+
+#: includes/class-wc-ali-settings.php:84
+msgid "Simple products"
+msgstr "Produits simple"
+
+#: includes/class-wc-ali-settings.php:87
+msgid "Variable products"
+msgstr "Produits variables"
+
+#: includes/class-wc-ali-settings.php:89
+msgid "Grouped products"
+msgstr "Produits groupés"
+
+#: includes/class-wc-ali-settings.php:91
+msgid "external products"
+msgstr "produits externes"
+
+#: includes/class-wc-ali-settings.php:108
+msgid "Custom message shown on single product page of simple product type"
+msgstr ""
+"Message personnalisé affiché sur la page de produit de type produit simple"
+
+#: includes/class-wc-ali-settings.php:121
+msgid "Custom message shown on single product page of variable product type"
+msgstr ""
+"Message personnalisé affiché sur la page de produit de type produit "
+"variable"
+
+#: includes/class-wc-ali-settings.php:134
+msgid "Custom message shown on single product page of grouped product type"
+msgstr ""
+"Message personnalisé affiché sur la page de produit de type produit groupé"
+
+#: includes/class-wc-ali-settings.php:147
+msgid "Custom message shown on single product page of external product type"
+msgstr ""
+"Message personnalisé affiché sur la page de produit de type produit externe"
+
+#: wc-aliexpress-shipping-based-product.php:116
+#: wc-aliexpress-shipping-based-product.php:129
+#, php-format
+msgid "You cannot clone instances of %s."
+msgstr "Vous ne pouvez pas cloner des instances de la Class %s."
+
+#: wc-aliexpress-shipping-based-product.php:146
+msgid " could not be activated. "
+msgstr " n'a pas pu être activé. "
+
+#: wc-aliexpress-shipping-based-product.php:164
+msgid " has been deactivated. "
+msgstr " a été désactivé. "
