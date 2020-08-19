@@ -3,7 +3,7 @@ Contributors: vanbom, najm
 Donate link: paypal.me/younesdro
 Tags: woocommerce, woo, aliexpress, dropship, dropshipping, ali2woo
 Requires at least: 5.3.2
-Tested up to: 5.4.2
+Tested up to: 5.5
 Requires PHP: 5.3
 Stable tag: 1.0.0
 License: GNU General Public License v3.0 or later License
