@@ -7,10 +7,10 @@
  * Author URI:      https://github.com/younes-dro/
  * Text Domain:     wc-ali-products-based-shipment
  * Domain Path:     /languages
- * Version:         1.0.0
+ * Version:         1.0.1
  * 
  * WC requires at least: 3.7.0
- * WC tested up to: 4.2.0
+ * WC tested up to: 5.1.0
  * 
  * Copyright: © 2020 Younes DRO
  * License: GNU General Public License v3.0
