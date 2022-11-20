@@ -60,13 +60,17 @@ class WC_Ali_Products_Shipment {
 	 */
 	protected static $dependencies;
 
-	/** @var array the admin notices to add */
+	/**
+	 * Array to save notifications.
+	 *
+	 * @var array the admin notices to add
+	 */
 	protected $notices = array();
 
 	/**
 	 * Check the dependencies that the plugin needs.
 	 *
-	 * @param obj dependencies
+	 * @param OBJ $dependencies
 	 */
 	public function __construct( WC_Ali_Dependencies $dependencies ) {
 
