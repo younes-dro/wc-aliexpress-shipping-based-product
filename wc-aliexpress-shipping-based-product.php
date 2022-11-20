@@ -194,7 +194,9 @@ class WC_Ali_Products_Shipment {
 			'message' => $message,
 		);
 	}
-
+	/**
+	 * Display Admin notifications.
+	 */
 	public function add_plugin_notices() {
 
 		if ( ! self::$dependencies->check_wp_version() ) {
@@ -265,11 +267,6 @@ class WC_Ali_Products_Shipment {
 
 		new WC_Ali_Front();
 	}
-	/*
-	-----------------------------------------------------------------------------------*/
-	/*
-	  Helper Functions                                                                 */
-	/*-----------------------------------------------------------------------------------*/
 
 	/**
 	 * Get the plugin url.
@@ -322,7 +319,7 @@ class WC_Ali_Products_Shipment {
 	/**
 	 * Register autoloader.
 	 *
-	 * @param string $class Class name to load
+	 * @param string $class_name Class name to load.
 	 */
 	public static function autoloader( $class_name ) {
 
@@ -333,6 +330,9 @@ class WC_Ali_Products_Shipment {
 		}
 	}
 
+	/**
+	 * Load Text domain directory.
+	 */
 	public function load_textdomain() {
 		load_plugin_textdomain( 'wc-ali-products-based-shipment', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
