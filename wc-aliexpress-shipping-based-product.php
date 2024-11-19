@@ -83,7 +83,6 @@ class WC_Ali_Products_Shipment {
 		add_action( 'plugins_loaded', array( $this, 'init_plugin' ) );
 
 		add_action( 'init', array( $this, 'load_textdomain' ) );
-
 	}
 
 	/**
@@ -211,7 +210,6 @@ class WC_Ali_Products_Shipment {
 
 			$this->add_admin_notice( 'update_ali2woo', 'error', self::$dependencies->get_ali2woo_notice() );
 		}
-
 	}
 
 	/**
@@ -268,7 +266,7 @@ class WC_Ali_Products_Shipment {
 	/*
 	-----------------------------------------------------------------------------------*/
 	/*
-	  Helper Functions                                                                 */
+		Helper Functions                                                                 */
 	/*-----------------------------------------------------------------------------------*/
 
 	/**
@@ -281,7 +279,6 @@ class WC_Ali_Products_Shipment {
 	public function plugin_url() {
 
 		return untrailingslashit( plugins_url( '/', __FILE__ ) );
-
 	}
 
 	/**
@@ -294,7 +291,6 @@ class WC_Ali_Products_Shipment {
 	public function plugin_path() {
 
 		return untrailingslashit( plugin_dir_path( __FILE__ ) );
-
 	}
 
 	/**
@@ -307,7 +303,6 @@ class WC_Ali_Products_Shipment {
 	public function plugin_basename() {
 
 		return plugin_basename( __FILE__ );
-
 	}
 
 	/**
@@ -345,7 +340,6 @@ function WC_Ali_Products_Shipment() {
 
 	WC_Ali_Products_Shipment::register_autoloader();
 	return WC_Ali_Products_Shipment::start( new WC_Ali_Dependencies() );
-
 }
 
 WC_Ali_Products_Shipment();
