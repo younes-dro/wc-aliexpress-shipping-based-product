@@ -1,7 +1,7 @@
 === Shipping-Based Products for woocommerce and Ali2Woo ===
 Contributors: vanbom, najm
 Donate link: paypal.me/younesdro
-Tags: woocommerce, woo, aliexpress, dropship, dropshipping, ali2woo
+Tags: woocommerce, woo, aliexpress, dropship, dropshipping, ali2woo.
 Requires at least: 5.3.2
 Tested up to: 6.1.1
 Requires PHP: 5.3
