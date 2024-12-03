@@ -1,6 +1,6 @@
 <?php
 /**
- * The message to display for simple product.
+ *
  */
 
 defined( 'ABSPATH' ) || exit;

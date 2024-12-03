@@ -1,6 +1,7 @@
 <?php
 /**
- * The message to display for variable product.
+ *
+ *
  */
 
 defined( 'ABSPATH' ) || exit;
