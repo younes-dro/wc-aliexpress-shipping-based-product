@@ -1,6 +1,7 @@
 <?php
 /**
- * The message to display for external product.
+ *
+ *
  */
 
 defined( 'ABSPATH' ) || exit;

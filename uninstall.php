@@ -4,9 +4,9 @@
  */
 
 
-if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+if( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-// Delete option from options table.
+// Delete option from options table
 delete_option( 'dro_shipping_options' );

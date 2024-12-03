@@ -1,6 +1,7 @@
 <?php
 /**
- * The message to display for grouped product.
+ *
+ *
  */
 
 defined( 'ABSPATH' ) || exit;
